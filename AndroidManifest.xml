@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myandroid.myapp"
+    android:versionCode="1"
+    android:versionName="1.3.0106" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <!-- 有米传媒 Android SDK 所需权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 可选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- /有米传媒 Android SDK 所需权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.dwbk.dwbks.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dwbk.dwbks.SurfaceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.dwbk.dwbks.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dwbk.dwbks.Gushi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dwbk.dwbks.Gongneng"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dwbk.dwbks.WebViewTB"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.dwbk.dwbks.Yingwen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" />
+
+ <!--        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="529ebbee56240b9a47013402" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="hiapk" />
+
+        <receiver android:name="com.adfeiwo.banner.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.adfeiwo.banner.WebViewActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="keyboard|orientation"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name="com.tencent.tauth.AuthActivity" />
+        <activity
+            android:name="com.feiwo.coverscreen.SA"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@*android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.feiwo.coverscreen.WA"
+            android:launchMode="singleInstance" />
+
+        <receiver android:name="com.feiwo.coverscreen.SR" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="broadcast.route.control" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.slfloat.LMA"
+            android:theme="@*android:style/Theme.Dialog" />
+
+        <service android:name="com.slfloat.LMS" />
+        <service android:name="com.slfloat.LMSK" />
+
+        <receiver
+            android:name="com.slfloat.LMR"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.dev.float.ALARM_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.slinsert.LMA"
+            android:theme="@*android:style/Theme.Dialog" />
+
+        <service android:name="com.slinsert.LMS" />
+        <service android:name="com.slinsert.LMSK" />
+
+        <receiver
+            android:name="com.slinsert.LMR"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.dev.insert.ALARM_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.slpop.LMA"
+            android:theme="@*android:style/Theme.Dialog" />
+
+        <service android:name="com.slpop.LMS" />
+        <service android:name="com.slpop.LMSK" />
+
+        <receiver
+            android:name="com.slpop.LMR"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.dev.pop.ALARM_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.slcom.slpresent.LMA"
+            android:theme="@*android:style/Theme.Dialog" />
+
+        <service android:name="com.slpresent.LMS" />
+        <service android:name="com.slpresent.LMSK" />
+
+        <receiver
+            android:name="com.slpresent.LMR"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.slpush.LMA"
+            android:theme="@*android:style/Theme.Dialog" />
+
+        <service android:name="com.slpush.LMS" />
+        <service android:name="com.slpush.LMSK" />
+
+        <receiver
+            android:name="com.slpush.LMR"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.dev.push.ALARM_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="zan_appid"
+            android:value="3437228" /> -->
+            
+            <!-- 有米传媒 Android SDK 配置(可直接复制节点) -->
+        <!-- SDK 必须配置 -->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name="net.youmi.android.AdReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!-- /SDK 必须配置 -->
+        <!-- 积分广告必须配置 -->
+        <receiver
+            android:name="net.youmi.android.offers.OffersReceiver"
+            android:exported="false" >
+        </receiver>
+        <!-- ／积分广告必须配置 -->
+        <!-- SmartBanner广告必须配置 -->
+        <activity
+                android:name="net.youmi.android.SmartBannerActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation"
+                android:theme="@style/Transparent"
+                ></activity>
+        <service
+                android:name="net.youmi.android.SmartBannerService"
+                android:exported="false"
+                ></service>
+        <!-- /SmartBanner广告必须配置 -->
+        <!-- 有米渠道号(可选配置) 渠道号不能带空格，类型为整数 -->
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="10120" >
+        </meta-data>
+        <!-- /有米渠道号(可选配置) -->
+        <!-- /有米传媒 Android SDK 配置 -->
+         <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52caa60f56240b3fc3342bf4" >
+        </meta-data>
+    </application>
+    <supports-screens
+        android:smallScreens="true" 
+        android:normalScreens="true" 
+        android:largeScreens="true" 
+        android:anyDensity="true"
+    />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+</manifest>

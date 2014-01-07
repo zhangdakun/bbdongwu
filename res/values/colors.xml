@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="umeng_socialize_comments_bg">#fff4f4f4</color>
+    <color name="umeng_socialize_color_group">#ff2c3035</color>
+    <color name="umeng_socialize_list_item_textcolor">#ff333333</color>
+    <color name="umeng_socialize_list_item_bgcolor">#ffffffff</color>
+    <color name="umeng_socialize_divider">#ffe6e6e6</color>
+    <color name="umeng_socialize_text_time">#ff999999</color>
+    <color name="umeng_socialize_text_title">#ff464f61</color>
+    <color name="umeng_socialize_text_friends_list">#ff959696</color>
+    <color name="umeng_socialize_text_share_content">#ff666666</color>
+    <color name="umeng_socialize_ucenter_bg">#ffeeeeee</color>
+    <color name="umeng_socialize_text_ucenter">#ff595959</color>
+    <color name="umeng_socialize_edit_bg">#ffc4c4c4</color>
+    <color name="umeng_socialize_grid_divider_line">#fff8f8f8</color>
+</resources>

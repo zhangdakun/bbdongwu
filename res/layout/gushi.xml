@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/imageButton1" android:background="@drawable/repeat_gnback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/shuiqian" />
+        <ImageView android:id="@id/imageButton2" android:background="@drawable/repeat_gnback" android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/gs_mhcdxnh" />
+        <ImageView android:id="@id/imageButton3" android:background="@drawable/repeat_gnback" android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/gs_dwg" />
+        <ImageView android:id="@id/imageButton4" android:background="@drawable/repeat_gnback" android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/gs_cxzdm" />
+        <ImageView android:id="@id/imageButton5" android:background="@drawable/repeat_gnback" android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/gs_hlhpt" />
+        <RelativeLayout android:id="@id/adonContainerView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</ScrollView>

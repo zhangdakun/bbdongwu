@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/homeback" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+    <TextView android:id="@id/text_ji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/app_name" />
+    <ImageButton android:id="@id/button_ji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/fengexian" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/button_ji" android:contentDescription="@string/app_name" />
+    <TextView android:id="@id/text_gou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/fengexian" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" />
+    <ImageButton android:id="@id/button_gou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/fengexian" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/fengexian2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/button_gou" android:contentDescription="@string/app_name" />
+    <TextView android:id="@id/text_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/fengexian2" android:layout_alignParentLeft="true" android:contentDescription="@string/app_name" />
+    <ImageButton android:id="@id/button_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/fengexian2" android:layout_alignParentRight="true" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/fengexian3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/button_three" android:contentDescription="@string/app_name" />
+    <TextView android:id="@id/text_wlts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/umeng_fb_rootId" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/umeng_fb_bar_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/umeng_fb_goback_btn" android:background="@drawable/umeng_fb_submit_selector" android:layout_width="60.0dip" android:layout_height="35.0dip" android:layout_marginLeft="14.0dip" android:text="@string/UMFeedbackGoBack" android:layout_alignBottom="@id/umeng_fb_see_list_btn" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0dip" android:textColor="#ff565656" android:gravity="center" android:layout_gravity="center" android:id="@id/umeng_fb_conversation_title" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/UMFeedbackConversationTitle" />
+        <ImageButton android:id="@id/umeng_fb_see_list_btn" android:background="@drawable/umeng_fb_see_list_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <EditText android:textColor="#ff737373" android:gravity="top" android:id="@id/umeng_fb_content" android:paddingLeft="9.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="2.0dip" android:hint="@string/UMFeedbackContent" android:maxEms="10" android:minEms="10" android:layout_weight="1.0" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="2.0dip">
+        <Spinner android:id="@id/umeng_fb_age_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Spinner android:id="@id/umeng_fb_gender_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/umeng_fb_age_spinner" android:layout_centerVertical="true" />
+        <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/umeng_fb_submit" android:background="@drawable/umeng_fb_submit_selector" android:layout_width="70.0dip" android:layout_height="43.0dip" android:layout_marginRight="8.0dip" android:text="@string/UMFeedbackSummit" android:layout_alignBaseline="@id/umeng_fb_age_spinner" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>
